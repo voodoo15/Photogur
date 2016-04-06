@@ -55,6 +55,7 @@ Rails.application.routes.draw do
   #   end
 
   #New routes for Photogur
+  root 'pictures#index'
   get 'pictures' => 'pictures#index'
 
   post 'pictures' => 'pictures#create'
