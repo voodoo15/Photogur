@@ -56,4 +56,6 @@ Rails.application.routes.draw do
 
   #New routes for Photogur
   get 'pictures' => 'pictures#index'
+  get 'pictures/:id' => 'pictures#show', as: 'picture'
+
 end
